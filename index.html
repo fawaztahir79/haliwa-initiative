@@ -3,186 +3,367 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="بورتفوليو مبادرة علاج الخالة حليوة حامد مستور">
+  <meta name="theme-color" content="#123f3a">
+  <meta name="description" content="مبادرة مجتمعية لدعم علاج الخالة حليوة حامد مستور وتوفير تكاليف العملية العاجلة.">
+  <meta property="og:title" content="مبادرة علاج الخالة حليوة حامد مستور">
+  <meta property="og:description" content="يدًا بيد حتى تعود الخالة حليوة إلى أهلها سالمة بإذن الله.">
+  <meta property="og:type" content="website">
   <title>مبادرة علاج الخالة حليوة حامد مستور</title>
-  <style>
-    :root {
-      --green: #075b49;
-      --green-dark: #064536;
-      --green-soft: #e8f2ed;
-      --gold: #c08b18;
-      --gold-light: #fff6dc;
-      --ink: #183c32;
-      --muted: #63736d;
-      --white: #fff;
-      --line: #d8e4de;
-      --shadow: 0 18px 45px rgba(7, 91, 73, .12);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #f7fbf8 0%, #fff 48%, #f5faf7 100%);
-      color: var(--ink);
-      font-family: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
-      line-height: 1.9;
-    }
-    .container { width: min(1080px, calc(100% - 32px)); margin: auto; }
-    header { padding: 28px 0 18px; text-align: center; }
-    .hero-image {
-      display: block; width: min(100%, 560px); margin: 0 auto 22px;
-      border-radius: 24px; box-shadow: var(--shadow);
-    }
-    h1, h2, h3 { margin-top: 0; color: var(--green); }
-    h1 { font-size: clamp(1.65rem, 4vw, 2.7rem); margin-bottom: 4px; }
-    .subtitle { color: var(--gold); font-size: clamp(1rem, 2.5vw, 1.35rem); font-weight: 700; }
-    .tagline {
-      background: var(--green); color: white; border-radius: 12px; padding: 9px 18px;
-      margin: 20px auto 0; max-width: 680px; font-weight: 700;
-    }
-    main { padding-bottom: 42px; }
-    .section { margin: 24px 0; }
-    .card {
-      background: var(--white); border: 1px solid var(--line); border-radius: 18px;
-      padding: clamp(18px, 4vw, 30px); box-shadow: 0 8px 26px rgba(7,91,73,.06);
-    }
-    .card h2 { border-right: 5px solid var(--gold); padding-right: 12px; }
-    .callout { background: var(--gold-light); border: 1px solid #e4b62b; }
-    .callout p { margin-bottom: 0; }
-    .details {
-      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
-    }
-    .detail {
-      background: var(--green-soft); border-radius: 14px; padding: 16px 18px;
-    }
-    .detail-label { display: block; color: var(--green); font-weight: 700; font-size: .9rem; }
-    .detail-value { display: block; margin-top: 3px; font-size: 1.08rem; font-weight: 700; }
-    .account { color: var(--gold); font-size: 1.5rem; letter-spacing: 1px; }
-    a { color: var(--green); font-weight: 700; }
-    .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 24px 0; }
-    .stat {
-      flex: 1 1 220px; text-align: center; background: var(--green); color: white;
-      border-radius: 16px; padding: 16px;
-    }
-    .stat strong { display: block; color: #ffd96d; font-size: 1.8rem; line-height: 1.3; }
-    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
-    table { width: 100%; border-collapse: collapse; min-width: 620px; background: white; }
-    th { background: var(--green); color: white; font-weight: 700; }
-    th, td { padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: right; }
-    td:first-child, th:first-child, td:nth-child(3), th:nth-child(3), td:last-child, th:last-child { text-align: center; }
-    tbody tr:nth-child(even) { background: #f1f7f3; }
-    tfoot { background: var(--gold-light); font-weight: 700; }
-    .prayer { background: var(--green); color: white; text-align: center; border-radius: 18px; padding: 22px; }
-    .prayer h2 { color: #ffd96d; }
-    footer { color: var(--muted); text-align: center; font-size: .85rem; padding: 10px 0 30px; }
-    .print-button {
-      position: fixed; left: 18px; bottom: 18px; border: 0; cursor: pointer;
-      background: var(--gold); color: var(--green-dark); border-radius: 999px;
-      padding: 11px 18px; font: inherit; font-weight: 700; box-shadow: var(--shadow);
-    }
-    @media (max-width: 650px) {
-      .container { width: min(100% - 20px, 1080px); }
-      .details { grid-template-columns: 1fr; }
-      .card { padding: 18px 15px; }
-      .tagline { font-size: .92rem; }
-    }
-    @media print {
-      body { background: white; }
-      .print-button { display: none; }
-      .card, .stat, .prayer { box-shadow: none; break-inside: avoid; }
-      .hero-image { max-width: 420px; }
-      a { color: inherit; text-decoration: none; }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
-    <img class="hero-image" src="campaign.png" alt="تصميم مبادرة علاج الخالة حليوة حامد مستور">
-    <h1>بورتفوليو مبادرة علاج الخالة حليوة حامد مستور</h1>
-    <div class="subtitle">مبادرة أهل أبوراي لصناعة الأمل</div>
-    <div class="tagline">كلنا أهل أبوراي — يدًا بيد نصنع الأمل</div>
-  </header>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
 
-  <main class="container">
-    <section class="section card">
-      <h2>نبذة عن الحالة</h2>
-      <p>الخالة <strong>حليوة حامد مستور</strong>، زوجة المرحوم العم <strong>محمد نور فضل السيد (بحر)</strong>، ترقد في <strong>مستشفى السودان للقلب</strong> وتحتاج إلى عملية عاجلة.</p>
-      <p>وبحسب البيانات الواردة، تعاني من مرض في صمام القلب، وجلطة أدت إلى شلل في الجانب الأيسر من الجسم، إلى جانب معاناتها من مرضي السكري والضغط.</p>
-      <p>تهدف المبادرة إلى حشد الدعم لتوفير تكاليف العلاج والعملية، ومساندة الخالة حليوة حتى تتمكن من استعادة عافيتها والعودة إلى أهلها وأحبابها سالمة بإذن الله.</p>
-    </section>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="العودة إلى أعلى الصفحة">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/><path class="pulse-mark" d="M5.3 12h3l1.3-2.7 2.2 5.5 1.7-3.5 1 1.7h4.2"/></svg>
+        </span>
+        <span class="brand-copy">
+          <strong>مبادرة علاج</strong>
+          <small>الخالة حليوة حامد مستور</small>
+        </span>
+      </a>
 
-    <section class="section card callout">
-      <h2>رسالة المبادرة</h2>
-      <p>كل مساهمة، مهما كانت بسيطة، يمكن أن تصنع فرقًا كبيرًا في حياة إنسان. ومن لم يستطع المساهمة فالدعاء لها بالشفاء لا يقل قيمة.</p>
-    </section>
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="#story">عن الحالة</a>
+        <a href="#contribute">بيانات المساهمة</a>
+        <a href="#records">كشف المساهمات</a>
+      </nav>
 
-    <section class="section">
-      <h2>بيانات المساهمة</h2>
-      <div class="details">
-        <div class="detail"><span class="detail-label">طريقة التحويل</span><span class="detail-value">بنكك</span></div>
-        <div class="detail"><span class="detail-label">رقم الحساب</span><span class="detail-value account">6818134</span></div>
-        <div class="detail"><span class="detail-label">اسم الحساب</span><span class="detail-value">حامد محمد نور فضل السيد</span></div>
-        <div class="detail"><span class="detail-label">مجموعة المبادرة</span><span class="detail-value"><a href="https://chat.whatsapp.com/CHujskeEBNLFhoY1cFlSAD" target="_blank" rel="noopener">الانضمام إلى مجموعة واتساب</a></span></div>
+      <div class="header-actions">
+        <button class="icon-button share-button" type="button" aria-label="مشاركة المبادرة" title="مشاركة المبادرة">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
+        </button>
+        <a class="header-cta" href="#contribute">ساهم الآن</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </section>
-
-    <div class="stats">
-      <div class="stat"><strong>1,510</strong>إجمالي المساهمات المسجلة</div>
-      <div class="stat"><strong>33</strong>مساهمة مؤكدة</div>
     </div>
 
-    <section class="section card">
-      <h2>كشف المساهمات المسجلة</h2>
-      <p>يتضمن الكشف أدناه المساهمات الواردة في البيانات الأصلية، وجميعها مذكورة بعلامة تأكيد.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>م</th><th>المساهم</th><th>المبلغ</th><th>الحالة</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>فاعل خير</td><td>50</td><td>تم</td></tr>
-            <tr><td>2</td><td>محمد عثمان التجاني</td><td>50</td><td>تم</td></tr>
-            <tr><td>3</td><td>محمد احمد ح الشرو</td><td>200</td><td>تم</td></tr>
-            <tr><td>4</td><td>جزولي يوسف الفكي</td><td>50</td><td>تم</td></tr>
-            <tr><td>5</td><td>فاعل خير</td><td>50</td><td>تم</td></tr>
-            <tr><td>6</td><td>مجاهد عبدالله الفكي</td><td>50</td><td>تم</td></tr>
-            <tr><td>7</td><td>نافع مركز النيل</td><td>20</td><td>تم</td></tr>
-            <tr><td>8</td><td>ابراهيم زاكي حمدان</td><td>50</td><td>تم</td></tr>
-            <tr><td>9</td><td>فاعل خير</td><td>50</td><td>تم</td></tr>
-            <tr><td>10</td><td>صالح حميميده</td><td>50</td><td>تم</td></tr>
-            <tr><td>11</td><td>دكتور صلاح ادم الفكي</td><td>100</td><td>تم</td></tr>
-            <tr><td>12</td><td>شيخ الدين عقيد</td><td>40</td><td>تم</td></tr>
-            <tr><td>13</td><td>مهند م ا حسين</td><td>30</td><td>تم</td></tr>
-            <tr><td>14</td><td>صبري على زاكي</td><td>50</td><td>تم</td></tr>
-            <tr><td>15</td><td>حسام مبارك الدولابي</td><td>20</td><td>تم</td></tr>
-            <tr><td>16</td><td>د جمال حامد حمدان</td><td>10</td><td>تم</td></tr>
-            <tr><td>17</td><td>يوسف علي حسن</td><td>50</td><td>تم</td></tr>
-            <tr><td>18</td><td>محمد الله جابو</td><td>20</td><td>تم</td></tr>
-            <tr><td>19</td><td>يوسف ادم احمد</td><td>100</td><td>تم</td></tr>
-            <tr><td>20</td><td>محمد عبدالله حسين</td><td>10</td><td>تم</td></tr>
-            <tr><td>21</td><td>فاروق جبارة حبيب</td><td>20</td><td>تم</td></tr>
-            <tr><td>22</td><td>ابراهيم حسن الشرو</td><td>50</td><td>تم</td></tr>
-            <tr><td>23</td><td>مجاهد ابوغنية</td><td>50</td><td>تم</td></tr>
-            <tr><td>24</td><td>معاذ مهدي</td><td>30</td><td>تم</td></tr>
-            <tr><td>25</td><td>المصري الريح</td><td>30</td><td>تم</td></tr>
-            <tr><td>26</td><td>محمد الحافظ حامد حمدان</td><td>30</td><td>تم</td></tr>
-            <tr><td>27</td><td>حامد ادم حميدة</td><td>50</td><td>تم</td></tr>
-            <tr><td>28</td><td>محمد عجبنا</td><td>30</td><td>تم</td></tr>
-            <tr><td>29</td><td>عبدالرحيم</td><td>30</td><td>تم</td></tr>
-            <tr><td>30</td><td>د متولي محمود</td><td>40</td><td>تم</td></tr>
-            <tr><td>31</td><td>محمود فضل السيد</td><td>50</td><td>تم</td></tr>
-            <tr><td>32</td><td>قسم ادم احمد</td><td>20</td><td>تم</td></tr>
-            <tr><td>33</td><td>قصي الضي</td><td>30</td><td>تم</td></tr>
-          </tbody>
-          <tfoot><tr><td colspan="2">المجموع</td><td>1,510</td><td>33 مساهمة</td></tr></tfoot>
-        </table>
+    <nav class="mobile-nav" id="mobileMenu" aria-label="قائمة الهاتف" hidden>
+      <a href="#story">عن الحالة</a>
+      <a href="#contribute">بيانات المساهمة</a>
+      <a href="#records">كشف المساهمات</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="urgent-pill">
+            <span class="urgent-dot"></span>
+            حالة إنسانية عاجلة
+          </div>
+          <p class="hero-kicker">لأن العطاء حياة</p>
+          <h1 id="heroTitle">معًا من أجل علاج<br><span>الخالة حليوة</span></h1>
+          <p class="hero-lead">يدًا بيد، نساند الخالة حليوة حامد مستور لتجاوز محنتها الصحية والعودة إلى أهلها وأحبابها سالمة بإذن الله.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contribute">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.9 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+              ساهم في العلاج
+            </a>
+            <a class="button button-ghost" href="#story">اقرأ عن الحالة</a>
+          </div>
+
+          <div class="hero-note">
+            <div class="support-faces" aria-hidden="true">
+              <span>خ</span><span>ع</span><span>م</span><span>+</span>
+            </div>
+            <p><strong>36 مساهمًا</strong><br>وقفوا معها حتى الآن</p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-label="رمز لدعم صحة القلب">
+          <div class="visual-dots visual-dots-top" aria-hidden="true"></div>
+          <div class="visual-ring ring-one" aria-hidden="true"></div>
+          <div class="visual-ring ring-two" aria-hidden="true"></div>
+          <div class="heart-card">
+            <div class="heart-halo" aria-hidden="true"></div>
+            <svg class="heart-illustration" viewBox="0 0 320 300" role="img" aria-label="قلب تحيط به يدان للدلالة على الرعاية والدعم">
+              <defs>
+                <linearGradient id="heartGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ec8c72"/>
+                  <stop offset="1" stop-color="#c94f45"/>
+                </linearGradient>
+              </defs>
+              <path class="care-hand hand-right" d="M278 164c-9-4-18 1-25 8l-29 26c-9 8-21 13-33 13h-30c-10 0-17 7-17 16 0 10 7 17 17 17h36c15 0 30-5 42-14l47-38c9-7 10-22 2-29-3-2-6-3-10-3Z"/>
+              <path class="care-hand hand-left" d="M42 164c9-4 18 1 25 8l29 26c9 8 21 13 33 13h30c10 0 17 7 17 16 0 10-7 17-17 17h-36c-15 0-30-5-42-14l-47-38c-9-7-10-22-2-29 3-2 6-3 10-3Z"/>
+              <path class="heart-shape" d="M160 198c-7-10-64-48-64-92 0-29 20-48 45-48 15 0 29 8 39 22 10-14 24-22 39-22 25 0 45 19 45 48 0 44-57 82-64 92-5 6-15 6-20 0Z"/>
+              <path class="heart-shine" d="M125 83c-9 7-14 17-14 29"/>
+              <path class="pulse-line" d="M116 133h25l10-21 18 42 13-29 9 16h25"/>
+            </svg>
+            <div class="visual-message">
+              <span class="tiny-heart" aria-hidden="true">♥</span>
+              <strong>شفاؤها أملنا</strong>
+              <small>ومساهمتك تصنع فرقًا</small>
+            </div>
+          </div>
+          <div class="visual-dots visual-dots-bottom" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="container quick-stats reveal">
+        <article class="quick-stat">
+          <span class="stat-icon stat-icon-coral" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+          </span>
+          <div><strong>36</strong><small>مساهمة مؤكدة</small></div>
+        </article>
+        <div class="stat-separator" aria-hidden="true"></div>
+        <article class="quick-stat">
+          <span class="stat-icon stat-icon-gold" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/></svg>
+          </span>
+          <div><strong>1,590</strong><small>إجمالي المساهمات المسجلة</small></div>
+        </article>
+        <div class="stat-separator" aria-hidden="true"></div>
+        <article class="quick-stat quick-stat-text">
+          <span class="stat-icon stat-icon-green" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <div><strong>مبادرة أهلية</strong><small>بجهود أهل الخير والمحبة</small></div>
+        </article>
       </div>
     </section>
 
-    <section class="section prayer">
-      <h2>دعاء</h2>
-      <p>نسأل الله العظيم رب العرش العظيم أن يشفي الخالة حليوة شفاءً تامًا عاجلًا، وأن يرد إليها صحتها وعافيتها، ويجزي كل من ساهم ووقف معها خير الجزاء.</p>
+    <section class="story section" id="story" aria-labelledby="storyTitle">
+      <div class="container story-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">عن الحالة</span>
+          <h2 id="storyTitle">نبذة عن <span>الخالة حليوة</span></h2>
+          <div class="heading-line" aria-hidden="true"><span></span></div>
+        </div>
+
+        <div class="story-content reveal">
+          <p class="story-intro">الخالة <strong>حليوة حامد مستور</strong>، زوجة المرحوم العم <strong>محمد نور فضل السيد (بحر)</strong>، ترقد حاليًا في <strong>مستشفى السودان للقلب</strong> وتحتاج إلى عملية عاجلة.</p>
+          <p>وبحسب البيانات الواردة، تعاني من مرض في صمام القلب، وجلطة أدت إلى شلل في الجانب الأيسر من الجسم، إلى جانب معاناتها من مرضي السكري والضغط.</p>
+
+          <div class="condition-list" aria-label="تفاصيل الحالة الصحية">
+            <article class="condition-card">
+              <span class="condition-number">01</span>
+              <span class="condition-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.9 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/><path d="M7 12h2.5l1.2-2.5 2.2 5 1.2-2.5H17"/></svg>
+              </span>
+              <div><h3>صمام القلب</h3><p>حاجة إلى تدخل وعملية عاجلة</p></div>
+            </article>
+            <article class="condition-card">
+              <span class="condition-number">02</span>
+              <span class="condition-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0-3 3.9 4 4 0 0 0 1.2 2.9A4 4 0 0 0 9 20h1M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1 3 3.9 4 4 0 0 1-1.2 2.9A4 4 0 0 1 15 20h-1M12 2v20"/></svg>
+              </span>
+              <div><h3>آثار الجلطة</h3><p>شلل في الجانب الأيسر من الجسم</p></div>
+            </article>
+            <article class="condition-card">
+              <span class="condition-number">03</span>
+              <span class="condition-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-5-7-13-7-13S5 10 5 15a7 7 0 0 0 7 7Z"/><path d="M9 16c.8 1.3 1.8 2 3.4 2"/></svg>
+              </span>
+              <div><h3>السكري والضغط</h3><p>حالة تتطلب رعاية ومتابعة دقيقة</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section section" aria-labelledby="messageTitle">
+      <div class="container">
+        <div class="message-card reveal">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <div class="message-copy">
+            <span class="eyebrow eyebrow-light">رسالة المبادرة</span>
+            <h2 id="messageTitle">كل مساهمة تصنع فرقًا</h2>
+            <p>مهما كانت المساهمة بسيطة، يمكن أن تكون سببًا في إنقاذ حياة. ومن لم يستطع المساهمة، فالدعاء لها بالشفاء لا يقل قيمة.</p>
+          </div>
+          <div class="message-heart" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.9 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contribution section" id="contribute" aria-labelledby="contributionTitle">
+      <div class="container">
+        <div class="center-heading reveal">
+          <span class="eyebrow">ساهم معنا</span>
+          <h2 id="contributionTitle">بيانات <span>المساهمة</span></h2>
+          <p>يمكنك التحويل مباشرة عبر تطبيق بنكك باستخدام البيانات التالية</p>
+        </div>
+
+        <div class="contribution-grid">
+          <article class="bank-card reveal">
+            <div class="bank-card-top">
+              <div>
+                <span class="bank-label">طريقة التحويل</span>
+                <strong class="bank-name">بنكك</strong>
+              </div>
+              <span class="bank-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 10v8M9 10v8M15 10v8M19 10v8M3 21h18M2 18h20"/></svg>
+              </span>
+            </div>
+
+            <div class="account-block">
+              <span>رقم الحساب</span>
+              <div class="account-row">
+                <b class="account-number" dir="ltr">6818134</b>
+                <button class="copy-button" type="button" data-copy="6818134" aria-label="نسخ رقم الحساب">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>نسخ الرقم</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="account-holder">
+              <span>اسم الحساب</span>
+              <strong>حامد محمد نور فضل السيد</strong>
+            </div>
+
+            <div class="bank-card-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              <span>يرجى التأكد من اسم الحساب قبل إتمام التحويل</span>
+            </div>
+          </article>
+
+          <aside class="community-card reveal reveal-delay">
+            <span class="community-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3v-7a7 7 0 0 1-1-3.6A7.4 7.4 0 0 1 9.5 4H16a6 6 0 0 1 5 11Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+            </span>
+            <span class="eyebrow">ابقَ على اطلاع</span>
+            <h3>مجموعة المبادرة</h3>
+            <p>انضم إلى مجموعة واتساب لمتابعة أخبار الحالة وتحديثات المبادرة أولًا بأول.</p>
+            <a class="whatsapp-button" href="https://chat.whatsapp.com/CHujskeEBNLFhoY1cFlSAD" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.6 9.6 0 0 1-3.8-.9L3 21l1.8-5A9.4 9.4 0 0 1 4 12a8.5 8.5 0 0 1 8.5-8.5A8.5 8.5 0 0 1 21 11.5Z"/><path d="M9 8.5c.5 2.8 2.2 4.5 5 5"/></svg>
+              الانضمام إلى المجموعة
+              <span aria-hidden="true">←</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="records section" id="records" aria-labelledby="recordsTitle">
+      <div class="container">
+        <div class="records-header reveal">
+          <div>
+            <span class="eyebrow">بكل شفافية</span>
+            <h2 id="recordsTitle">كشف المساهمات المسجلة</h2>
+            <p>جميع المساهمات الواردة في البيانات الأصلية موضحة أدناه.</p>
+          </div>
+          <div class="records-tools">
+            <label class="search-box">
+              <span class="sr-only">ابحث باسم المساهم</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.4-4.4"/></svg>
+              <input id="donorSearch" type="search" placeholder="ابحث باسم المساهم..." autocomplete="off">
+            </label>
+            <button class="print-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              طباعة / حفظ PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table>
+            <caption class="sr-only">قائمة بأسماء المساهمين والمبالغ وحالة المساهمة</caption>
+            <thead>
+              <tr><th scope="col">م</th><th scope="col">المساهم</th><th scope="col">المبلغ</th><th scope="col">الحالة</th></tr>
+            </thead>
+            <tbody id="donorTableBody">
+              <tr><td data-label="م">1</td><td data-label="المساهم">فاعل خير</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">2</td><td data-label="المساهم">محمد عثمان التجاني</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">3</td><td data-label="المساهم">محمد احمد ح الشرو</td><td data-label="المبلغ"><b>200</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">4</td><td data-label="المساهم">جزولي يوسف الفكي</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">5</td><td data-label="المساهم">فاعل خير</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">6</td><td data-label="المساهم">مجاهد عبدالله الفكي</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">7</td><td data-label="المساهم">نافع مركز النيل</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">8</td><td data-label="المساهم">ابراهيم زاكي حمدان</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">9</td><td data-label="المساهم">فاعل خير</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">10</td><td data-label="المساهم">صالح حميميده</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">11</td><td data-label="المساهم">دكتور صلاح ادم الفكي</td><td data-label="المبلغ"><b>100</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">12</td><td data-label="المساهم">شيخ الدين عقيد</td><td data-label="المبلغ"><b>40</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">13</td><td data-label="المساهم">مهند م ا حسين</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">14</td><td data-label="المساهم">صبري على زاكي</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">15</td><td data-label="المساهم">حسام مبارك الدولابي</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">16</td><td data-label="المساهم">د جمال حامد حمدان</td><td data-label="المبلغ"><b>10</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">17</td><td data-label="المساهم">يوسف علي حسن</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">18</td><td data-label="المساهم">محمد الله جابو</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">19</td><td data-label="المساهم">يوسف ادم احمد</td><td data-label="المبلغ"><b>100</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">20</td><td data-label="المساهم">محمد عبدالله حسين</td><td data-label="المبلغ"><b>10</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">21</td><td data-label="المساهم">فاروق جبارة حبيب</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">22</td><td data-label="المساهم">ابراهيم حسن الشرو</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">23</td><td data-label="المساهم">مجاهد ابوغنية</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">24</td><td data-label="المساهم">معاذ مهدي</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">25</td><td data-label="المساهم">المصري الريح</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">26</td><td data-label="المساهم">محمد الحافظ حامد حمدان</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">27</td><td data-label="المساهم">حامد ادم حميدة</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">28</td><td data-label="المساهم">محمد عجبنا</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">29</td><td data-label="المساهم">محمد الضي الرضي</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">30</td><td data-label="المساهم">د متولي محمود</td><td data-label="المبلغ"><b>40</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">31</td><td data-label="المساهم">محمود فضل السيد</td><td data-label="المبلغ"><b>50</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">32</td><td data-label="المساهم">قسم ادم احمد</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">33</td><td data-label="المساهم">قصي الضي</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">34</td><td data-label="المساهم">النور سليمان حامد</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">35</td><td data-label="المساهم">سامي يعقوب</td><td data-label="المبلغ"><b>30</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+              <tr><td data-label="م">36</td><td data-label="المساهم">ايمن الزريع</td><td data-label="المبلغ"><b>20</b></td><td data-label="الحالة"><span class="status-badge">تم</span></td></tr>
+            </tbody>
+            <tfoot>
+              <tr><th colspan="2" scope="row">المجموع</th><td><strong>1,590</strong></td><td><strong>36 مساهمة</strong></td></tr>
+            </tfoot>
+          </table>
+          <p class="no-results" id="noResults" hidden>لم يتم العثور على مساهم بهذا الاسم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="prayer section" aria-labelledby="prayerTitle">
+      <div class="container">
+        <div class="prayer-card reveal">
+          <span class="prayer-ornament" aria-hidden="true">✦</span>
+          <span class="eyebrow eyebrow-gold">دعاء من القلب</span>
+          <h2 id="prayerTitle">اللهم رب الناس، أذهب البأس واشفِ أنت الشافي</h2>
+          <p>نسأل الله العظيم رب العرش العظيم أن يشفي الخالة حليوة شفاءً تامًا عاجلًا، وأن يرد إليها صحتها وعافيتها، ويجزي كل من ساهم ووقف معها خير الجزاء.</p>
+          <span class="amen">آمين يا رب العالمين</span>
+          <span class="prayer-ornament prayer-ornament-bottom" aria-hidden="true">✦</span>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="container">أُعدّ هذا المستند بناءً على البيانات والصورة المقدمة من أصحاب المبادرة، دون إضافة معلومات خارجية.</footer>
-  <button class="print-button" onclick="window.print()">طباعة / حفظ PDF</button>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark brand-mark-small" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.9 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        </span>
+        <p><strong>مبادرة علاج الخالة حليوة</strong><small>بتكاتف أهل الخير تُصنع المعجزات</small></p>
+      </div>
+      <p class="footer-note">جزاكم الله خيرًا وكتب أجركم</p>
+      <button class="footer-share share-button" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
+        مشاركة المبادرة
+      </button>
+    </div>
+  </footer>
+
+  <div class="mobile-contribute-bar">
+    <div><small>رقم حساب بنكك</small><strong dir="ltr">6818134</strong></div>
+    <a href="#contribute">بيانات المساهمة</a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+    <span>تم نسخ رقم الحساب</span>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
