@@ -33,6 +33,7 @@
         <a href="#story">عن الحالة</a>
         <a href="#contribute">بيانات المساهمة</a>
         <a href="#records">كشف المساهمات</a>
+        <a href="#feedback">آراء الزوار</a>
         <a href="#thanks">كلمة شكر</a>
       </nav>
 
@@ -51,6 +52,7 @@
       <a href="#story">عن الحالة</a>
       <a href="#contribute">بيانات المساهمة</a>
       <a href="#records">كشف المساهمات</a>
+      <a href="#feedback">آراء الزوار</a>
       <a href="#thanks">كلمة شكر</a>
     </nav>
   </header>
@@ -324,6 +326,137 @@
             </tfoot>
           </table>
           <p class="no-results" id="noResults" hidden>لم يتم العثور على مساهم بهذا الاسم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visitor-feedback section" id="feedback" aria-labelledby="feedbackTitle">
+      <div class="container">
+        <div class="visitor-counter reveal">
+          <div class="visitor-counter-heading">
+            <div>
+              <span class="eyebrow">معًا نصنع الأثر</span>
+              <h2>أنتم جزء من <span>هذه المبادرة</span></h2>
+              <p>شكرًا لكل من زار الصفحة، شاركها، أو دعا للخالة حليوة بالشفاء.</p>
+            </div>
+            <span class="visitor-counter-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+            </span>
+          </div>
+
+          <div class="visitor-stats" aria-label="إحصاءات زوار الصفحة">
+            <article class="visitor-stat-card visitor-stat-unique">
+              <span class="visitor-stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0M18 8h3M19.5 6.5v3"/></svg>
+              </span>
+              <div>
+                <span class="visitor-stat-label">إجمالي الزوار</span>
+                <strong class="visitor-stat-value" data-visitor-counter="unique" aria-live="polite">—</strong>
+                <small>زائر فريد لكل جهاز</small>
+              </div>
+            </article>
+            <article class="visitor-stat-card visitor-stat-today">
+              <span class="visitor-stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2M7 3l-2 2M17 3l2 2"/></svg>
+              </span>
+              <div>
+                <span class="visitor-stat-label">زوار اليوم</span>
+                <strong class="visitor-stat-value" data-visitor-counter="today" aria-live="polite">—</strong>
+                <small>يُصفَّر مع بداية يوم جديد</small>
+              </div>
+            </article>
+            <article class="visitor-stat-card visitor-stat-visits">
+              <span class="visitor-stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 12s3.3-6 9-6 9 6 9 6-3.3 6-9 6-9-6-9-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+              </span>
+              <div>
+                <span class="visitor-stat-label">إجمالي الزيارات</span>
+                <strong class="visitor-stat-value" data-visitor-counter="visits" aria-live="polite">—</strong>
+                <small>يتجدد مع كل فتح للصفحة</small>
+              </div>
+            </article>
+          </div>
+          <p class="counter-status" id="counterStatus" aria-live="polite">جارٍ تحديث الإحصاءات…</p>
+        </div>
+
+        <div class="feedback-heading center-heading reveal">
+          <span class="eyebrow">صوتكم يهمنا</span>
+          <h2 id="feedbackTitle">آراء <span>الزوار</span></h2>
+          <p>شاركنا دعاءً أو كلمة دعمٍ للخالة حليوة ولأهلها.</p>
+        </div>
+
+        <div class="feedback-layout">
+          <form class="feedback-form reveal" id="feedbackForm" novalidate>
+            <div class="feedback-form-heading">
+              <span class="feedback-form-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 15a4 4 0 0 1-4 4H8l-5 3v-7a7 7 0 0 1-1-3.6A7.4 7.4 0 0 1 9.5 4H16a6 6 0 0 1 4 11Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+              </span>
+              <div><h3>اكتب رأيك</h3><p>كلماتك الطيبة تصنع فرقًا.</p></div>
+            </div>
+
+            <div class="form-field">
+              <label for="feedbackName">الاسم <small>اختياري</small></label>
+              <input id="feedbackName" name="name" type="text" maxlength="80" autocomplete="name" placeholder="مثال: محمد أحمد">
+            </div>
+
+            <fieldset class="rating-field">
+              <legend>تقييمك <span aria-hidden="true">*</span></legend>
+              <div class="rating-options" role="radiogroup" aria-describedby="feedbackRatingHint">
+                <input id="rating1" name="rating" type="radio" value="1">
+                <label for="rating1" aria-label="نجمة واحدة"><span aria-hidden="true">★</span></label>
+                <input id="rating2" name="rating" type="radio" value="2">
+                <label for="rating2" aria-label="نجمتان"><span aria-hidden="true">★</span></label>
+                <input id="rating3" name="rating" type="radio" value="3">
+                <label for="rating3" aria-label="ثلاث نجوم"><span aria-hidden="true">★</span></label>
+                <input id="rating4" name="rating" type="radio" value="4">
+                <label for="rating4" aria-label="أربع نجوم"><span aria-hidden="true">★</span></label>
+                <input id="rating5" name="rating" type="radio" value="5">
+                <label for="rating5" aria-label="خمس نجوم"><span aria-hidden="true">★</span></label>
+              </div>
+              <small class="rating-hint" id="feedbackRatingHint">اختر من نجمة إلى خمس نجوم</small>
+            </fieldset>
+
+            <div class="form-field message-field">
+              <label for="feedbackMessage">رسالتك <span aria-hidden="true">*</span></label>
+              <textarea id="feedbackMessage" name="message" rows="5" maxlength="400" required placeholder="نسأل الله لها الشفاء العاجل..." aria-describedby="feedbackCharacters"></textarea>
+              <small class="character-count" id="feedbackCharacters">0 / 400</small>
+            </div>
+
+            <p class="feedback-alert feedback-error" id="feedbackError" role="alert" hidden></p>
+            <p class="feedback-alert feedback-success" id="feedbackSuccess" role="status" hidden>شكرًا لك، تم حفظ رأيك.</p>
+            <button class="feedback-submit" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              إرسال الرأي
+            </button>
+            <p class="feedback-privacy">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>
+              تُحفظ الآراء في متصفحك على هذا الجهاز فقط ولا تُرسل إلى أي جهة.
+            </p>
+          </form>
+
+          <div class="feedback-results reveal reveal-delay">
+            <article class="rating-summary" aria-labelledby="ratingSummaryTitle">
+              <div>
+                <span class="summary-label" id="ratingSummaryTitle">متوسط التقييم</span>
+                <strong class="summary-number" id="ratingAverage">0.0</strong>
+                <span class="summary-out-of">من 5</span>
+              </div>
+              <div class="summary-stars" id="summaryStars" aria-label="لا توجد تقييمات بعد">☆☆☆☆☆</div>
+              <p id="reviewCount">لا توجد آراء بعد</p>
+            </article>
+
+            <div class="reviews-list-heading">
+              <h3>ما قاله الزوار</h3>
+              <span id="reviewListCount">0</span>
+            </div>
+            <div class="feedback-empty" id="feedbackEmpty">
+              <span aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 15a4 4 0 0 1-4 4H8l-5 3v-7a7 7 0 0 1-1-3.6A7.4 7.4 0 0 1 9.5 4H16a6 6 0 0 1 4 11Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+              </span>
+              <p>كن أول من يترك كلمة طيبة ودعاءً بالشفاء.</p>
+            </div>
+            <div class="reviews-list" id="reviewsList" aria-live="polite"></div>
+          </div>
         </div>
       </div>
     </section>
